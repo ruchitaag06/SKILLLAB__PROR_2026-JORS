@@ -71,7 +71,7 @@ By the final review, this README should clearly show:
 
 `"Meet JORVIS: Semaphore Memory Beast"`
 
-<img width="1600" height="1131" alt="image" src="(https://github.com/ruchitaag06/SKILLLAB__PROR_2026-JORS/blob/main/images/GROUP%20NAME.png)"/>
+<img width="1600" height="1131" alt="image" src="https://github.com/ruchitaag06/SKILLLAB__PROR_2026-JORS/blob/main/images/GROUP%20NAME.png"/>
 
 ## 1.4 One-Line Pitch
 
