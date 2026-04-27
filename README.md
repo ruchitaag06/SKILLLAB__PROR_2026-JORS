@@ -58,7 +58,7 @@ By the final review, this README should clearly show:
 ## 1.1 Studio / Group Name
 
 `JORS`
-<img width="1600" height="1131" alt="image" src="https://github.com/ruchitaag06/SKILLLAB__PROR_2026-JORS/blob/main/images/WhatsApp%20Image%202026-04-27%20at%2010.52.50%20AM.jpeg" />
+<img width="1600" height="1131" alt="image" src="https://github.com/ruchitaag06/SKILLLAB__PROR_2026-JORS/blob/main/images/Group_photo.jpeg" />
 ## 1.2 Team Members
 
 | Name           | Primary Role                    | Secondary Role | Strengths Brought to the Project |
