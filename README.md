@@ -650,7 +650,7 @@ Suggested images:
 - mechanism test,
 - app screenshot,
 - final build.
-- <img width="960" height="1280" alt="WhatsApp Image 2026-04-24 at 9 46 02 AM (1)" src="build_photos.jpeg" />
+- <img width="960" height="1280" alt="WhatsApp Image 2026-04-24 at 9 46 02 AM (1)" src="https://github.com/ruchitaag06/SKILLLAB__PROR_2026-JORS/blob/main/images/build_photos.jpeg" />
 
 
 
