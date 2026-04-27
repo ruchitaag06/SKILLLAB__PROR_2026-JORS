@@ -290,7 +290,7 @@ Insert a hand-drawn or software-made circuit diagram.
 
 **Insert image below:**  
 `[Upload image and link here]`
-<img width="867" height="1156" alt="" src="" />
+<img width="867" height="1156" alt="" src="https://github.com/ruchitaag06/SKILLLAB__PROR_2026-JORS/blob/main/images/Jorvis_schematic.jpeg" />
 
 
 # 9. | Question         | Response                                                                                                           |
