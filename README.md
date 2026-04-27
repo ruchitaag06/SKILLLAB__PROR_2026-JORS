@@ -218,7 +218,14 @@ Explain how the system works in simple terms.
 
 ## 6.3 Input / Output Map
 
-| System Part                              | Type            | What It Does                                                               |
+| | System Part            | Type       | What It Does                                                     |
+| ---------------------- | ---------- | ---------------------------------------------------------------- |
+| Joystick               | Input      | Allows user to scroll through options and select an answer       |
+| Shrike Lite (RP2040)   | Processing | Controls logic, moves servos, reads input, and checks the answer |
+| SG90 Servo Motors (×4) | Output     | Move the arms to display semaphore positions                     |
+| LCD Display            | Output     | Shows answer options and basic game information                  |
+| LEDs (×2)              | Output     | Indicate correct or wrong answer through blinking                |
+| Physical Structure     | Structure  | Holds all components together and gives the creature its form    |
 
 
 ---
@@ -226,17 +233,10 @@ Explain how the system works in simple terms.
 # 7. Sketches and Visual Planning
 
 ## 7.1 Concept Sketch
+
 **Insert image below:**  
 
  <img width="1600" height="1131" alt="image" src="(https://github.com/ruchitaag06/SKILLLAB__PROR_2026-JORS/blob/main/images/WhatsApp%20Image%202026-04-27%20at%203.35.23%20PM.jpeg)" />
-
-
-
-Example:
-
-```md
-
-```
 
 
 
@@ -258,10 +258,10 @@ Add a sketch with labels showing:
 
 | Dimension        | Value   |
 | ---------------- | ------- |
-| Length           | `16 cm` |
-| Width            | `16 cm` |
-| Height           | `8 cm`  |
-| Estimated weight | `400 g` |
+| Length           | `15 cm` |
+| Width            | `10 cm` |
+| Height           | `15cm`  |
+| Estimated weight | `approx 300 g` |
 
 ---
 
@@ -269,26 +269,29 @@ Add a sketch with labels showing:
 
 ## 8.1 Electronics Used
 
-| Component                 | Quantity | Purpose                               |
-| ------------------------- | --------:| ------------------------------------- |
-| `[ESP32]`                 | `1`      | `[Main controller]`                   |
-| `[L298N Motor Driver]`    | `1`      | `[Control Motors]`                    |
-| `[BO Motors]`             | `2`      | `[Rotate wheels]`                     |
-| `[Buck Converter]`        | `1`      | `[Power ESP32]`                       |
-| `[Li Ion Battery Pack]`   | `2`      | `[Power]`                             |
-| `[Projector]`             | `1`      | `[Display obstacles]`                 |
-| `Camera (Webcam / Phone)` | `1`      | `[Tracks car position using markers]` |
+| Component                   | Quantity | Purpose                                   |
+| --------------------------- | -------: | ----------------------------------------- |
+| Shrike Lite (RP2040)        |        1 | Main controller for logic and control     |
+| SG90 Servo Motors           |        2| Move arms to create semaphore positions   |
+| Joystick Module             |        1 | User input for selecting answers          |
+| 16×2 LCD (I2C)              |        1 | Display options and game information      |
+| LEDs                        |        2 | Indicate correct or wrong answer          |
+| Breadboard & Wires          |    1 set | Connections and prototyping               |
+| Cardboard Structure |        1 | Physical body and mounting for components |
+
 
 ## 8.2 Wiring Plan
 
 Describe the main electrical connections.
 
 **Response:**  
-`The ESP32 is connected to the motor driver (L298N) using four GPIO pins (18,19; 22,23) to control motor direction (IN1, IN2, IN3, IN4). Two PWM-capable pins (ENA and ENB; 25 and 26) are connected to control the speed of each motor.
-
-The motors are connected to the output terminals of the motor driver. The motor driver is powered directly by the battery pack (higher voltage), while the ESP32 receives regulated 5V from the buck converter.
-
-All components share a common ground to ensure stable operation. The projector and camera are connected to the laptop, which handles tracking and game logic separately.`
+The Shrike Lite (RP2040) acts as the central controller, interfacing with all components. 
+The I2C LCD is connected via SDA to GPIO 8 and SCL to GPIO 9, with power supplied through VCC (3.3V/5V depending on the module) and GND. 
+The joystick module is used for user input, where VRx and VRy are connected to GPIO 26 and GPIO 27 (analog inputs), and the switch (SW) is connected to GPIO 15 using an internal pull-up resistor.
+Two servo motors control the semaphore arm movements. 
+The left servo signal is connected to GPIO 5 and the right servo to GPIO 6. Both servos are powered using an external 5V supply, with their ground connected to the system’s common ground.
+Additionally, a green LED is connected to GPIO 14 and a red LED to GPIO 11, which blink to indicate correct and incorrect answers respectively.
+All components share a common ground to ensure stable operation, while the microcontroller processes inputs and controls outputs, displaying signals via servos and user interaction through the LCD and joystick.
 
 ## 8.3 Circuit Diagram
 
@@ -299,14 +302,13 @@ Insert a hand-drawn or software-made circuit diagram.
 <img width="867" height="1156" alt="" src="" />
 
 
-# 9. Power Plan
+# 9. | Question         | Response                                                                                                           |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Power source     | `Laptop USB power (5V)`                                                                                            |
+| Voltage required | `5V from USB for Shrike Lite and SG90 servos (3.3V logic handled internally)`                                      |
+| Current concerns | `Limited USB current can cause slight jitter and less accurate servo angles when multiple servos move`             |
+| Safety concerns  | `Avoid moving all servos at once, ensure proper wiring, and prevent short circuits to protect the laptop USB port` |
 
-| Question         | Response                                                                                                                                          |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Power source     | `Battery (Li-ion pack)`                                                                                                                           |
-| Voltage required | `~6–8.4V for motors (via driver), stepped down to 5V for ESP32 (buck converter)`                                                                  |
-| Current concerns | `Motors can draw high current under load, which may cause voltage drops affecting ESP32 and WiFi stability`                                       |
-| Safety concerns  | `Avoid over-discharging Li-ion batteries, ensure proper voltage regulation, prevent short circuits, and secure wiring to avoid loose connections` |
 
 ---
 
@@ -314,12 +316,13 @@ Insert a hand-drawn or software-made circuit diagram.
 
 ## 10.1 Software Tools
 
-| Tool / Platform                | Purpose                                        |
-| ------------------------------ | ---------------------------------------------- |
-| `[MicroPython]`                | `Control ESP32`                                |
-| `[Python/PyGame/OpenCV]`       | `Track markers, game logic, create projection` |
-| `[Fusion/Blender/Illustrator]` | `[Prototyping structure]`                      |
-|                                |                                                |
+| Tool / Platform      | Purpose                                       |
+| -------------------- | --------------------------------------------- |
+| Arduino IDE          | Write and upload code to Shrike Lite (RP2040) |
+| Embedded C/C++       | Program logic for servo control and game flow |
+| LCD Library LiquidCrystal_I2C.h         | Control and display text on the LCD screen    |
+| Servo Library Servo.h      | Control SG90 servo movements using PWM        |
+
 
 ## 10.2 Software Logic
 
@@ -338,20 +341,19 @@ Include:
 **Response:**  
 `
 
-- **Startup behavior:**  
-  The ESP32 initializes motor pins, PWM control, and starts a WiFi access point with a web server. The laptop initializes camera input, tracking system, and projection mapping.
-- **Input handling:**  
-  Movement commands are received from the laptop (pygame sends http requests)
-- **Sensor reading:**  
-  The camera continuously captures frames, and OpenCV detects ArUco markers to determine the car’s position and orientation.
-- **Decision logic:**  
-  The system maps the car’s position into a virtual coordinate system and checks for nearby obstacles or collisions. If movement is valid, the command is allowed; if not, it is blocked or replaced with a feedback action (like a slight shake).
-- **Output behavior:**  
-  The ESP32 drives the motors using PWM signals to control speed and direction. The projector displays the updated game environment, including obstacles, targets, and feedback visuals.
-- **Communication logic:**  
-  The laptop sends HTTP requests (e.g., `/forward`, `/left`) to the ESP32 over WiFi. The ESP32 parses these commands and executes motor actions.
-- **Reset behavior:**  
-  If no command is received within a short timeout, the ESP32 stops the motors. The game resets when a level is completed or restarted.`
+The code begins with a startup sequence where the system initializes the I2C communication, LCD display, servo motors, joystick input, and LEDs. The servos are set to a neutral position, and a welcome message is shown on the LCD. A random correct answer is selected from a predefined list of words. After this, the system performs a short demonstration where the servo arms move in specific positions to simulate semaphore signals, prompting the user to observe carefully.
+
+For input handling, the system continuously reads the joystick values. The vertical movement of the joystick is used to scroll through answer options displayed on the LCD, while the joystick button is used to select an option. A small logic is used to prevent repeated scrolling when the joystick is held in one direction.
+
+There are no external sensors in this system, but the joystick acts as the primary input device whose analog and digital signals are read by the microcontroller.
+
+The decision logic compares the user’s selected option with the randomly chosen correct answer. Based on this comparison, the system decides whether the response is correct or incorrect.
+
+For output behavior, the servo motors move to create arm positions for the initial semaphore demonstration. After selection, if the answer is correct, the servos perform a quick celebratory movement and the green LED turns on. If the answer is wrong, the servos move into a drooping position and the red LED turns on. The LCD also displays “CORRECT!” or “WRONG :(” accordingly.
+
+There is no external communication logic such as WiFi or Bluetooth, as the entire system operates locally using onboard inputs and outputs.
+
+After the user makes a selection, the system enters a stopped state using an infinite loop, meaning it does not reset or continue automatically. A manual reset or restart is required to run the program again.
 
 ## 10.3 Code Flowchart
 
@@ -389,19 +391,31 @@ Suggested sequence:
 
 ## 11.2 Material Justification
 
-Explain why you selected your main materials and components.
+**Response:** 
+We selected the Shrike Lite (RP2040) as the main controller because it is compact, fast, and has enough GPIO pins to control multiple servos, the LCD, and the joystick at the same time. It is also beginner-friendly and stable for rapid prototyping.
 
-**Response:**  
-`DC motors (BO motors) were chosen instead of servos or steppers because the system requires continuous rotation for movement rather than precise angular control (Previously, we were considering using steppers as we were planning on tracking movement on the ESP using its relative position from an origin, but since we're using a camera now, this is not required). A motor driver (L298N) was used to allow bidirectional control and speed variation using PWM.`
+We used SG90 Micro Servo Motor because they are lightweight, low-cost, and easy to control using PWM signals. This was important since the project involves visible arm movements, and heavier motors would make the structure unstable and harder to build within limited time.
+
+The joystick module was chosen as the main input device because it provides an intuitive way for users to navigate options and make selections, making the game feel interactive without needing complex controls.
+
+The 16×2 LCD display was used to clearly show answer options and game prompts. It is simple, low-power, and sufficient for displaying short text-based choices needed for the memory game.
+
+We included LEDs for quick visual feedback. Green and red indicators make it immediately clear whether the user’s answer is correct or wrong, enhancing the game experience without adding complexity.
+
+Finally, lightweight materials like cardboard or acrylic were selected for the body structure because they are easy to laser-cut, assemble quickly, and keep the servo load low, which is important for maintaining stable movement.
 
 
 ## 11.3 Items You chose
+| Item                     | Why Needed                                    | Purchase Link | Latest Safe Date to Procure | Status     |
+| ------------------------ | --------------------------------------------- | ------------- | --------------------------- | ---------- |
+| `Shrike Lite (RP2040)`   | `Main controller for logic and motor control` | `robu.in`     | `Day 1`                     | `Received` |
+| `SG90 Servo Motors (x4)` | `Move arms for semaphore display`             | `robu.in`     | `Day 1`                     | `Received` |
+| `Joystick Module`        | `User input for selecting answers`            | `local store` | `Day 1`                     | `Received` |
+| `16×2 LCD (I2C)`         | `Display options and game messages`           | `robu.in`     | `Day 1`                     | `Received` |
+| `LEDs (Red + Green)`     | `Correct / wrong feedback indication`         | `local store` | `Day 1`                     | `Received` |
+| `Breadboard + Wires`     | `Circuit connections and prototyping`         | `local store` | `Day 1`                     | `Received` |
+| `Cardboard / Acrylic`    | `Structure for creature body`                 | `local store` | `Day 1`                     | `Received` |
 
-| Item                 | Why Needed               | Purchase Link | Latest Safe Date to Procure | Status       |
-| -------------------- | ------------------------ | ------------- | --------------------------- | ------------ |
-| `BO Motors + Wheels` | `Drive system for car`   | `robu.in`     | `15th April`                | `[Received]` |
-| `Buck Converter`     | `Stable power for ESP32` | `local store` | `before testing`            | `[Received]` |
-| `Li-ion Batteries`   | `Portable power`         | `local store` | `before testing`            | `Recieved`   |
 
 ## 11.4 Budget Summary
 
@@ -459,8 +473,24 @@ Include:
 
 ---
 
-# 13. 2 hour Milestones
+# 13. 2 hour Milestones 
 
+2-HOUR MILESTONE UPDATE
+Major Design Change
+The project concept was changed from generic pattern-based movement to a semaphore flag communication system.
+This shift helped redefine JORVIS into a gesture-based decoding and memory game, rather than random servo motion patterns.
+Early Implementation Progress
+In the first 2 hours, initial servo output testing was successfully completed.
+Basic control of the first arm wire (servo connection) was implemented to verify movement behavior.
+Early work focused on:
+Testing servo response
+Checking wiring stability
+Validating basic flag-like arm positions
+Key Insight from This Phase
+Moving to a semaphore-based system provided a clear structure for communication.
+Even with only partial implementation (first arm wired), it confirmed that:
+Servo-based directional encoding is feasible
+The system can represent meaningful symbolic gestures using arm positions
 ## 13.1 8-hour Plan
 
 ### Bi Hour 1 — Plan and De-risk
@@ -468,9 +498,9 @@ Include:
 Expected outcomes:
 
 - [x] Idea finalized
-- [x] Core interaction decided
-- [x] Sketches made
-- [x] BOM completed
+- [ ] Core interaction decided
+- [ ] Sketches made
+- [ ] BOM completed
 - [x] Purchase needs identified
 - [ ] Key uncertainty identified
 - [x] Basic feasibility tested
