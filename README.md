@@ -416,14 +416,17 @@ Finally, lightweight materials like cardboard or acrylic were selected for the b
 
 ## 11.4 Budget Summary
 
-| Budget Item           | Estimated Cost              |
-| --------------------- | ---------------------------:|
-| Electronics           | `[400]`                     |
-| Mechanical parts      | `[200]`                     |
-| Fabrication materials | `[0 (Available on campus)]` |
-| Purchased extras      | `[0]`                       |
-| Contingency           | `[300]`                     |
-| **Total**             | `[900]`                     |
+| Budget Item            | Estimated Cost |
+| ---------------------- | -------------: |
+| Shrike Lite (RP2040)   |            400 |
+| SG90 Servo Motors (x2) |            200 |
+| Joystick Module        |             80 |
+| 16×2 LCD (I2C)         |            150 |
+| LEDs (Red + Green)     |             20 |
+| Breadboard + Wires     |            100 |
+| Cardboard / Acrylic    |  0 (Available) |
+| Contingency            |            300 |
+| **Total**              |       **1250** |
 
 ## 11.5 Budget Reflection
 
