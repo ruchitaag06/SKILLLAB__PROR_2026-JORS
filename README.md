@@ -432,7 +432,7 @@ Finally, lightweight materials like cardboard or acrylic were selected for the b
 
 If your cost is too high, what can be simplified, removed, substituted, or shared?
 
-**Response:**  
+not required   
 
 ---
 
