@@ -670,12 +670,24 @@ How did the project change from the initial idea?
 
 ## 18.1 Team Reflection
 
-What did your team do well?  
-What slowed you down?  
-How well did you manage time, tasks, and responsibilities?
-
-**Response:**  
-
+**What the Team Did Well**
+Strong collaboration during a very short 8-hour timeline, with parallel work on hardware, software, and documentation.
+Quick decision-making, especially during ideation where multiple concepts were evaluated before finalizing JORVIS.
+Effective adaptability, such as switching from MG996 to SG90 servos and capacitive touch to joystick based on feasibility.
+Continuous mutual support, where members helped each other instead of working in isolated tasks.
+Successful integration of hardware and software into a working prototype despite constraints.
+**What Slowed the Team Down**
+Hardware instability, especially servo alignment issues and limited accuracy of SG90 motors.
+LCD problems like low brightness/contrast affecting readability.
+Software issues such as joystick input loops and missing libraries causing compilation delays.
+Integration challenges between modules that individually worked but needed calibration together.
+Time pressure, which reduced the scope for deep debugging and refinement.
+**Time, Task, and Responsibility Management**
+Time was managed in a highly compressed, phase-based structure (1–8 hours) rather than traditional long-term planning.
+Tasks were clearly divided but executed in parallel, especially during implementation and documentation phases.
+Responsibilities were flexible rather than rigid, allowing members to step in wherever needed.
+Despite minor delays from debugging issues, the team maintained overall flow and completed a functional integrated system within the available time.
+Documentation and PPT were efficiently handled alongside development, ensuring no separate time block was required.
 
 ## 18.2 Technical Reflection
 
