@@ -229,7 +229,7 @@ Explain how the system works in simple terms.
 
 ## 7.1 Concept Sketch
 
-<img width="1600" height="1131" alt="image" src="(https://github.com/ruchitaag06/SKILLLAB__PROR_2026-JORS/blob/main/images/WhatsApp%20Image%202026-04-27%20at%203.35.23%20PM.jpeg)"/>
+<img width="1600" height="1131" alt="image" src="https://github.com/ruchitaag06/SKILLLAB__PROR_2026-JORS/blob/main/images/WhatsApp%20Image%202026-04-27%20at%203.35.23%20PM.jpeg"/>
 
 
 
