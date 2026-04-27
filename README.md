@@ -595,15 +595,12 @@ What is the single biggest uncertainty in your project at this stage?
 
 
 
-## 15.3 | Tester  | What They Did                                                                                                                                 | What They Enjoyed                                                           | What You Will Change                                                              |
-| ------- | -------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| Ruchita | Tested documentation flow, PPT structure, and overall user understanding of the system || Enjoyed structuring and simplifying the overall project narrative           | Improve clarity between technical implementation and explanation in documentation |
-| Surabhi | Worked on research, ideation support, and observed gameplay logic and design flow      | Enjoyed exploring creative aspects of game design and concept evolution     | Add clearer mapping between gestures and word encoding system                     |
-| Omkar   | Focused on hardware design, prototype structure, and physical assembly                 |  Enjoyed building the physical structure and seeing motion-based interaction | Improve servo mounting stability and refine mechanical balance                    |
-| Jay     | Handled coding, integration, and system testing (joystick, LCD, servos)                | Enjoyed debugging and making the full system function end-to-end            | Optimize code structure and improve input handling logic                          |
-
-
----
+## 15.3 | Tester  | What They Did                                                                                                                                 | Tester  | What They Did                                                                     | What They Enjoyed                                                           | What You Will Change                                                              |
+| ------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| Ruchita | Tested documentation flow, PPT structure, and overall understanding of the system | Enjoyed structuring and simplifying the project narrative                   | Improve clarity between technical implementation and explanation in documentation |
+| Surabhi | Worked on research, ideation support, and observed gameplay logic and design flow | Enjoyed exploring creative aspects of game design and concept evolution     | Add clearer mapping between gestures and word encoding system                     |
+| Omkar   | Focused on hardware design, prototype structure, and physical assembly            | Enjoyed building the physical structure and seeing motion-based interaction | Improve servo mounting stability and refine mechanical balance                    |
+| Jay     | Handled coding, integration, and system testing (joystick, LCD, servos)           | Enjoyed debugging and making the full system function end-to-end            | Optimize code structure and improve input handling logic                          |
 
 # 16. Build Documentation
 
