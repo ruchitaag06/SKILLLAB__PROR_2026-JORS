@@ -71,7 +71,7 @@ By the final review, this README should clearly show:
 
 `"Meet JORVIS: Semaphore Memory Beast"`
 
-<img width="1600" height="1131" alt="image" src="https://github.com/user-attachments/assets/c64bfbd4-b3b7-43d9-83ad-c203a5aa11bc" />
+<img width="1600" height="1131" alt="image" src="(https://github.com/ruchitaag06/SKILLLAB__PROR_2026-JORS/blob/main/images/GROUP%20NAME.png)"/>
 
 ## 1.4 One-Line Pitch
 
@@ -128,7 +128,7 @@ List what inspired the project.
 
 What makes your project original?
 
-**Our project is original because it transforms the traditional **semaphore flag signaling** into an interactive memory game, where players must observe, decode, and interpret physical arm movements instead of relying on screens or text.**  
+**Our project is original because it transforms the traditional *semaphore flag signaling* into an interactive memory game, where players must observe, decode, and interpret physical arm movements instead of relying on screens or text.**  
 
 
 ---
@@ -138,7 +138,11 @@ What makes your project original?
 ## 4.1 User Journey 
 
 Describe exactly how a user will use the project.Make it a story
-**Response:**  
+**The arms begin to move slowly. One lifts up while the other turns to the side, then both shift into a new position. Each movement is held just long enough to notice, forming a clear sequence that the user can follow and remember.
+Once the sequence ends, the screen shows a few word options. The user thinks back to the movements and tries to understand what the creature was saying.
+Using the joystick, they move through the options and choose an answer.
+If the answer is correct, the arms move quickly and playfully, almost like a small celebration, while the lights blink brightly. If the answer is wrong, the arms gently lower and the lights blink slowly, giving a softer, quieter response.
+Soon, the arms lift again, ready to show a new sequence, and the user watches more carefully this time.**
 
                                                   |
 
