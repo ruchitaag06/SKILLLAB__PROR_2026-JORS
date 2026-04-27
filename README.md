@@ -137,16 +137,11 @@ What makes your project original?
 
 ## 4.1 User Journey 
 
-Describe exactly how a user will use the project.Make it a story
 **The arms begin to move slowly. One lifts up while the other turns to the side, then both shift into a new position. Each movement is held just long enough to notice, forming a clear sequence that the user can follow and remember.
 Once the sequence ends, the screen shows a few word options. The user thinks back to the movements and tries to understand what the creature was saying.
 Using the joystick, they move through the options and choose an answer.
 If the answer is correct, the arms move quickly and playfully, almost like a small celebration, while the lights blink brightly. If the answer is wrong, the arms gently lower and the lights blink slowly, giving a softer, quieter response.
 Soon, the arms lift again, ready to show a new sequence, and the user watches more carefully this time.**
-
-                                                  |
-
-
 
 ---
 
@@ -234,9 +229,7 @@ Explain how the system works in simple terms.
 
 ## 7.1 Concept Sketch
 
-**Insert image below:**  
-
- <img width="1600" height="1131" alt="image" src="(https://github.com/ruchitaag06/SKILLLAB__PROR_2026-JORS/blob/main/images/WhatsApp%20Image%202026-04-27%20at%203.35.23%20PM.jpeg)" />
+<img width="1600" height="1131" alt="image" src="(https://github.com/ruchitaag06/SKILLLAB__PROR_2026-JORS/blob/main/images/WhatsApp%20Image%202026-04-27%20at%203.35.23%20PM.jpeg)"/>
 
 
 
@@ -440,24 +433,25 @@ If your cost is too high, what can be simplified, removed, substituted, or share
 
 ## 12.1 Team Working Agreement
 
-Write how your team will work together.
-
-Include:
-
-- how tasks are divided,
-- how decisions are made,
-- how progress will be checked,
-- what happens if a task is delayed,
-- how documentation will be maintained.
+Task Division: Work is divided into four main areas: documentation and presentation, research and ideation, hardware implementation, and software development. Each member takes primary ownership of one area while assisting others during integration and testing phases.
+Decision Making: All major design and implementation decisions are made collectively. Quick decisions during development are handled through group discussion and consensus to avoid delays, especially during hardware testing phases.
+Progress Tracking: Progress is tracked through regular check-ins during work sessions. The team reviews completed tasks, current blockers, and next steps at fixed intervals to ensure alignment.
+Handling Delays: If a task is delayed, other members temporarily support or redistribute workload to ensure the overall project timeline is not affected. Priority is given to maintaining system integration rather than individual task completion.
+Documentation Maintenance: Documentation is maintained collaboratively. One member updates the main document, while others provide inputs after completing their respective tasks. All changes are reviewed by the group to ensure accuracy and consistency.
 
 **Response:**  
 
 
 ## 12.2 Task Breakdown
 
-| Task ID | Task                    | Owner    | Estimated Hours | Deadline     | Dependency | Status |
-| ------- | ----------------------- | -------- | ---------------:| ------------ | ---------- | ------ |
-| T1      | `[Finalize concept]`    | `[Both]` | `2`             | `1st April`  | `None`     | `Done` |
+| Task ID | Task                                            | Owner      | Estimated Hours | Phase Timing | Dependency | Status |
+| ------- | ----------------------------------------------- | ---------- | --------------- | ------------ | ---------- | ------ |
+| T1      | Ideation & Concept Finalization                 | All        | 1               | Hour 1       | None       | Done   |
+| T2      | Core Implementation (Hardware + Software Setup) | Jay + Team | 3               | Hours 2–4    | T1         | Done   |
+| T3      | Documentation (Report writing)                  | Ruchita    | 4 (parallel)    | Hours 2–6    | T1         | Done   |
+| T4      | PPT Preparation                                 | Surabhi    | 3 (parallel)    | Hours 2–6    | T1         | Done   |
+| T5      | Hardware Assembly                               | Omkar      | 1               | Hour 5       | T2         | Done   |
+| T6      | Testing & Debugging                             | All        | 1               | Hour 5       | T2, T5     | Done   |
 
 
 ## 12.3 Responsibility Split
@@ -537,12 +531,16 @@ Expected outcomes:
 
 ## 13.2  Update Log
 
-| Week   | Planned Goal   | What Actually Happened | What Changed   | Next Steps     |
-| ------ | -------------- | ---------------------- | -------------- | -------------- |
-| Week 1 | `[Write here]` | `[Write here]`         | `[Write here]` | `[Write here]` |
-| Week 2 | `[Write here]` | `[Write here]`         | `[Write here]` | `[Write here]` |
-| Week 3 | `[Write here]` | `[Write here]`         | `[Write here]` | `[Write here]` |
-| Week 4 | `[Write here]` | `[Write here]`         | `[Write here]` | `[Write here]` |
+| Hour   | Planned Goal                                    | What Actually Happened                                                                                                                                                 | What Changed                                                                                      | Next Steps                                              |
+| ------ | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| Hour 1 | Ideation and final concept selection            | Explored 4 ideas: lie detector, greenhouse system, component tracker, and creature-based system. Final idea selected: interactive creature (JORVIS)                    | Shifted from utility-based ideas to a game-based semaphore creature concept                       | Move to hardware selection and feasibility testing      |
+| Hour 2-4| Component testing and hardware selection        | Tested components and restructured design. Changed MG996 servo to SG90 due to weight/stability issues. Switched capacitive touch sensor to joystick                    | Input system simplified to joystick for better control and reliability                            | Begin integration of servo + joystick system            |
+| Hour 5  | Basic system integration (servo, LCD, joystick) | LCD brightness issues occurred, servo alignment slightly tilted affecting accuracy, joystick code stuck in loop, and library installation issues prevented compilation | Debugging required for LCD contrast, servo calibration, and code structure fixes                  | Fix wiring, install libraries, stabilize input handling |
+| Hour 6| System debugging and prototype stabilization    | Partial working system achieved after fixing code and library issues. Servo and joystick interaction improved but still not fully stable                               | System remained semi-functional due to hardware constraints and calibration limitations           | Prepare system for final integration and build assembly |
+| Hour 7 | Final integration and testing                   | Hardware assembly completed. Servo structure mounted, joystick and LCD connected, and basic game flow tested                                                           | Mechanical and electrical integration finalized, minor accuracy issues remained in servo movement | Move to documentation and presentation preparation      |
+| Hour 8 | PPT creation, documentation, and final assembly | PPT and documentation completed in parallel. Final project assembly finished and system prepared for demo                                                              | Focus shifted from development to presentation and packaging of the project                       | Final debugging and readiness for demonstration         |
+
+
 
 ---
 
