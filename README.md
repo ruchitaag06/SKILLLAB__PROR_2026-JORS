@@ -570,15 +570,25 @@ What is the single biggest uncertainty in your project at this stage?
 
 ## 15.1 Technical Testing Plan
 
-| What Needs Testing     | How You Will Test It                                                                 | Success Condition                                                                                    |
-| ---------------------- | ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------- |
-| `[Wifi connection]`    | `[Check if motor spins via app button]`                                              | `[Both motors accurately respond to wifi signals]`                                                   |
+| What Needs Testing       | How You Will Test It                                         | Success Condition                                        |
+| ------------------------ | ------------------------------------------------------------ | -------------------------------------------------------- |
+| Servo movement accuracy  | Run predefined semaphore positions and observe arm alignment | Arms consistently reach correct angles for each gesture  |
+| Joystick input selection | Navigate options on LCD using joystick in repeated trials    | Correct option selection without lag or looping issues   |
+| LCD display readability  | Test display under different power and contrast settings     | Clear and readable text with stable brightness           |
+| Game logic flow          | Run full game cycle from word display to result              | Smooth transition between all game stages without errors |
+| Servo coordination       | Test multi-servo movements together                          | All servos move synchronously without collision or drift |
+                                                  |
                        |
 ## 15.2 Testing and Debugging Log
 
-| Date          | Problem Found                         | Type         | What You Tried                                | Result               | Next Action                                    |
-| ------------- | ------------------------------------- | ------------ | --------------------------------------------- | -------------------- | ---------------------------------------------- |
-| `18th April`  | `Car not balancing properly`          | `Mechanical` | `Add low-friction caster support to one side` | `Worked`             | `improve caster structure`                     |
+| Date       | Problem Found                                                 | Type       | What You Tried                                      | Result                | Next Action                         |
+| ---------- | ------------------------------------------------------------- | ---------- | --------------------------------------------------- | --------------------- | ----------------------------------- |
+| 27th April | Servo motors misaligned causing inaccurate semaphore gestures | Mechanical | Adjusted mounting angle and repositioned servo arms | Partial improvement   | Recalibrate servo angles in code    |
+|  27th April  | Joystick stuck in input loop preventing selection             | Software   | Modified loop structure and input handling logic    | Fixed after debugging | Optimize input debounce             |
+|  27th April  | LCD not clearly visible (low brightness/contrast)             | Hardware   | Checked wiring and adjusted contrast settings       | Improved readability  | Fine-tune display settings          |
+| 27th April  | Code failed to compile due to missing libraries               | Software   | Installed required Arduino libraries                | Resolved              | Verify dependencies before build    |
+|  27th April  | Servo power instability during multiple movements             | Electrical | Reduced simultaneous servo motion load              | Reduced jitter        | Improve power distribution strategy |
+
 
 
 ## 15.3 Playtesting Notes
@@ -592,36 +602,40 @@ What is the single biggest uncertainty in your project at this stage?
 
 # 16. Build Documentation
 
-## 16.1 Fabrication Process
+**16.1 Fabrication Process**
 
-Describe how the project was physically made.
+The fabrication process involved designing, building, assembling, and refining the physical structure and electronic integration of the JORVIS system.
 
-Include:
+**Design (Planning and Layout)**
 
-- cutting,
-- 3D printing,
-- assembly,
-- fastening,
-- wiring,
-- finishing,
-- revisions.
+The initial structure was planned based on the size and placement of components such as the Shrike Lite board, servos, joystick, LCD, and LEDs. The design ensured proper alignment for semaphore arm movement and stable mounting of all electronics.
 
-**Response:**  
-`The fabrication process involved designing, manufacturing, assembling, and refining both the physical structure and electronic integration of the system.`
+**Cutting and Structure Creation**
 
-`Design (CAD Modeling):
-The initial model was created using CAD software, where components were designed based on the actual dimensions of the electronic parts. This ensured accurate fitting and minimized errors during assembly.
-Cutting (Laser Cutting):
-The designed parts were fabricated using laser cutting techniques. Sheets were cut precisely according to the CAD model to create the structural base and mounts for components.`
+The body frame was created using lightweight materials such as cardboard/acrylic. Parts were cut manually based on measured dimensions to ensure proper fitting of servos and electronic modules.
 
-`Components were fixed using adhesives and mechanical supports. Certain parts were intentionally kept modular (not permanently fixed) to allow easy replacement and modification of electronics.
-Surface Finishing:
-Some parts were sanded to smooth rough edges after cutting. Sawdust mixed with adhesive was used to fill gaps and uneven edges, improving structural finish. The final structure was then painted for better aesthetics and durability.`
+**Assembly**
 
-`Environment Setup (Dark Room Fabrication):
-To enhance projection visibility, a controlled dark environment was created using Z-boards, paper sheets, and bedsheets. This minimized external light interference and improved projection clarity.
-Revisions and Iterations:
-Multiple adjustments were made throughout the process, including refining alignment, improving structural stability, repositioning components, and optimizing the interaction between the physical car and projected environment.`
+All electronic and mechanical components were assembled onto the structure:
+
+SG90 servos were mounted for arm movement
+LCD was fixed at a visible angle for user interaction
+Joystick was placed for easy control
+LEDs were positioned for clear feedback indication
+Fastening
+
+Components were secured using adhesives and mechanical supports. Some parts were kept modular so that wiring and hardware could be easily adjusted during debugging and testing.
+
+**Wiring**
+
+All connections were routed carefully between:
+
+Shrike Lite (RP2040)
+Servos
+LCD (I2C)
+Joystick module
+LEDs
+Wiring was adjusted multiple times to fix instability and ensure proper signal flow.
 
 ## 16.2 Build Photos
 
