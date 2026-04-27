@@ -184,9 +184,9 @@ Check all that apply.
 
 - [ ] Sound-based
 
-- [x] Light-based
+- [] Light-based
 
-- [x] Screen/UI-based
+- [] Screen/UI-based
 
 - [x] Fabricated structure
 
@@ -375,11 +375,11 @@ Suggested sequence:
 
 | Item                             | Quantity | In Kit? | Need to Buy? | Estimated Cost | Material / Spec               | Why This Choice?          |
 | -------------------------------- | --------:| ------- | ------------ | --------------:| ----------------------------- | ------------------------- |
-| `[ESP32]`                        | `1`      | `Yes`   | `No`         | `0`            | `38 Pin ESP32`                | `[To control components]` |
-| `[Motor Driver]`                 | `[1]`    | `[Yes]` | `[No]`       | `0`            | `[LN296]`                     | `[To drive both motors]`  |
-| `[DC Motors and wheel]`          | `[2]`    | `[No]`  | `[Yes]`      | `[150]`        | `[BO Motors and 6 cm wheels]` | `[high torque motors]`    |
-| `[Buck Converter]`               | `[1]`    | `[No]`  | `[Yes]`      | `[75]`         |                               |                           |
-| `[Li-ion batteries with holder]` | `[1]`    | `[No]`  | `[Yes]`      | `[200]`        |                               |                           |
+| `[SHRIKE LITE]`                        | `1`      | `yes`   | `no`         | `369`            | `38 Pin SHRIKE LITE`                | `[To control components]` |
+| `[SERVO MOTORS]`                 | `[2]`    | `[yes]` | `[no]`       | `199`            | `[5V micro servos, ~180° rotation, lightweight]`                     | `[Move the arms to create semaphore positions]`  |
+| `[JOYSTICK]`          | `[1]`    | `[yes]`  | `[No]`      | `[39]`        | `[Analog X/Y outputs + digital switch for navigation and selection]` | `[Lets the user navigate and select answers]`    |
+| `[LCD Display]`               | `[1]`    | `[yes]`  | `[No]`      | `200]`         | `Low-pin interface, displays text for options and feedback`                              |      `Shows answer options and game information`                     |
+| `[LED]` | `[2]`    | `[yes]`  | `[no]`      | `[6]`        | `Low-power visual indicators (with current-limiting resistors)`                              |  `Indicate correct (happy) or wrong (sad) responses visually`                      |
 
 ## 11.2 Material Justification
 
@@ -444,12 +444,12 @@ Include:
 
 | Area                 | Main Owner | Support Owner |
 | -------------------- | ---------- | ------------- |
-| Concept              | `[Gopal]`  | `[Kader]`    |
-| Electronics          | `[]`       | `[]`     |
-| Coding               | `[]`       | `[]`     |
-| Mechanical build     | `[]`       | `[]`    |
-| Testing              | `[]`       | `[]`    |
-| Documentation        | `[]`       | `[]`     |
+| Concept              | `[SURABHI]`  | `[RUCHITA]`    |
+| Electronics          | `[JAY]`       | `[RUCHITA,SURABHI]`     |
+| Coding               | `[JAY]`       | `[SURABHI]`     |
+| Mechanical build     | `[OMKAR]`       | `[]`    |
+| Testing              | `[JAY]`       | `[OMKAR]`    |
+| Documentation        | `[RUCHITA]`       | `[SURABHI]`     |
 
 ---
 
