@@ -683,8 +683,9 @@ The LCD display + LED feedback system clearly communicates game states (options,
 The project shows strong end-to-end integration, where hardware, software, and physical structure work together as a complete interactive system.
 
 ## 17.3 What Still Needs Improvement
-
-
+ elbow joints could have been added for more accuracy and variety of alphabets
+ 
+ 
 ## 17.4 What Changed From the Original Plan
 
 The project evolved significantly from its original concept during the ideation and early development stages.
