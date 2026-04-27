@@ -553,21 +553,18 @@ Expected outcomes:
 
 # 14. Risks and Unknowns
 
-## 14.1 Risk Register
-
-| Risk                                                            | Type         | Likelihood | Impact   | Mitigation Plan                                                                       | Owner                |
-| --------------------------------------------------------------- | ------------ | ---------- | -------- | ------------------------------------------------------------------------------------- | -------------------- |
-| WiFi connection between laptop and ESP32 becomes unstable       | `Technical`  | `Medium`   | `High`   | Keep ESP32 close, ensure stable power supply, reduce network load, add fail-safe stop | `[Gopal]`           |
+| Risk                                                             | Type      | Likelihood | Impact | Mitigation Plan                                                                                                                   |
+| ---------------------------------------------------------------- | --------- | ---------- | ------ | --------------------------------------------------------------------------------------------------------------------------------- |
+| Servo angles not accurate, leading to unclear semaphore gestures | Technical | High       | High   | Recalibrate servo angle values in code, adjust physical alignment of mounts, and iteratively test and refine positions            |
+| LCD display not clear or readable (contrast/brightness issues)   | Hardware  | Medium     | Medium | Adjust contrast potentiometer, improve wiring stability, reposition display for better visibility, and ensure stable power supply |
 
 
 ## 14.2 Biggest Unknown Right Now
 
 What is the single biggest uncertainty in your project at this stage?
 
-**Response:**  
+The single biggest uncertainty in the project at this stage is the accuracy and consistency of servo-based semaphore gestures.
 
-
----
 
 # 15. Testing 
 
