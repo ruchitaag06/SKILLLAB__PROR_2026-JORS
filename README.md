@@ -369,8 +369,7 @@ Suggested sequence:
 - error handling.
 
 **Insert image below:**  
-<img width="1600" height="1200" alt="image" src="" />
-<img width="1600" height="1200" alt="image" src="" />
+<img width="1600" height="1200" alt="image" src="https://github.com/ruchitaag06/SKILLLAB__PROR_2026-JORS/blob/main/images/Jorvis_flowchart.jpeg" />
 
 
 
