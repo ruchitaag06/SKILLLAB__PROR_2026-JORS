@@ -58,26 +58,24 @@ By the final review, this README should clearly show:
 ## 1.1 Studio / Group Name
 
 `JORS`
-https://github.com/ruchitaag06/SKILLLAB__PROR_2026-JORS/blob/main/images/WhatsApp%20Image%202026-04-27%20at%2010.52.50%20AM.jpeg<img width="1600" height="1131" alt="image" src="https://github.com/ruchitaag06/SKILLLAB__PROR_2026-JORS/blob/main/images/WhatsApp%20Image%202026-04-27%20at%2010.52.50%20AM.jpeg" />
+<img width="1600" height="1131" alt="image" src="https://github.com/ruchitaag06/SKILLLAB__PROR_2026-JORS/blob/main/images/WhatsApp%20Image%202026-04-27%20at%2010.52.50%20AM.jpeg" />
 ## 1.2 Team Members
 
 | Name           | Primary Role                    | Secondary Role | Strengths Brought to the Project |
 | -------------- | ------------------------------- | -------------- | -------------------------------- |
-| `RUCHITA GAURI` | `[Electronics / Coding / App ]` | `Documentation`  | `Documentation, Gift of Gab `|
-| `SURABHI KARADE PATIL`| `[Electronics / Fabrication]`   | `[Coding]`     | `Material Handling, Hardware`    |
-| `JAY HUMBE`| `[Electronics / Fabrication]`   | `[Coding]`     | `Material Handling, Hardware`    |
-| `OMKAR KHARTUDE`| `[Electronics / Fabrication]`   | `[Coding]`     | `Material Handling, Hardware`    |
+| `RUCHITA GAURI` | `[DOCUMENTATION ]` | `[HARDWARE]`  | `Documentation, Material Handling `|
+| `SURABHI KARADE PATIL`| `[RESEARCH]`   | `[HARDWARE]`     | `Material Handling, Hardware`    |
+| `JAY HUMBE`| `[HARDWARE]`   | `[Coding]`     | `Material Handling, Hardware`    |
+| `OMKAR KHARTUDE`| `[PRODUCT DESIGNING]`   | `[DOCUMENTATION]`     | `Material Handling, Hardware`    |
 ## 1.3 Project Title
 
-`"Project Project"`
-
-`(because Project-or)`
+`"Meet JORVIS: Semaphore Memory Beast"`
 
 <img width="1600" height="1131" alt="image" src="https://github.com/user-attachments/assets/c64bfbd4-b3b7-43d9-83ad-c203a5aa11bc" />
 
 ## 1.4 One-Line Pitch
 
-`A projected, fully customizable time portal where engineering education is done through PUBG battlefield in the comfort of our home`
+`A quirky blob creature that talks using semaphore flag arms.Watch its movements, remember the sequence, guess the word, and enjoy its silly happy dance when you get it right!`
 
 ## 1.5 Expanded Project Idea
 
@@ -88,7 +86,10 @@ In 1–2 paragraphs, explain:
 - what technologies are involved.
 
 **Response:**  
-`A projected and fully customizable time portal can transform engineering education into an immersive PUBG-style battlefield experience from the comfort of home. In this environment, students can learn engineering concepts by entering a virtual battlefield where challenges, obstacles, and missions are designed around real technical problems. Instead of passively studying theory, learners actively apply concepts such as electronics, coding, sensors, robotics, mechanics, and system design to complete missions, solve problems, and progress through different levels. This approach makes engineering education more interactive, engaging, and practical by combining gaming, simulation, and hands-on problem-solving in a familiar and exciting format.`
+`JORVIS is a quirky little blob creature that communicates using real semaphore flag signals (used in ship to ship communication) with its arms. It raises its two flapping hands to show different semaphore positions that spell out a hidden word. After showing the full sequence once, it asks you to guess the word by showing a few options on the LCD. You have to watch the arm movements carefully, remember the sequence of flag positions, and select the correct answer using the joystick. If you guess right, the creature gets super excited and does a happy dance with its body wiggling and arms flapping around. If you guess wrong, it looks sad and droops its arms slowly while the two LEDs blink red.
+This project works as a fun memory game. You need to observe the arm positions, remember the order, and think to figure out the word. It feels like playing with a silly, dramatic friend who only knows how to talk with flags. The moving arms and simple reactions make it strange but enjoyable to play and watch.
+Technologies involved:
+It runs on the Shrike Lite microcontroller and uses four SG90 servo motors two to move the shoulder. A joystick lets you select answers on the LCD. Two LEDs blink to show if your answer is correct or wrong. The creature’s body and arms are made from cardboard panels.`
 
 ---
 
@@ -119,7 +120,7 @@ List what inspired the project.
 
 | Source Type | Title / Link                                                        | What Inspired You                                                                         |
 | ----------- | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| `[Video]`   | `https://www.instagram.com/reel/DW4CT7WCDry/?igsh=cXg3dzAxYmdncDBo` | `How projection mapping can be used to create interactive digital + physical experiences` |
+| `[WIKIPEDIA]`   | `[https://www.instagram.com/reel/DW4CT7WCDry/?igsh=cXg3dzAxYmdncDBo](https://en.wikipedia.org/wiki/Flag_semaphore#:~:text=Contemporary%20semaphore%20flag%20system,-For%20history%2C%20see&text=The%20current%20flag%20semaphore%20system,make%20the%20characters%20more%20obvious)` | `inspired by transforming the traditional semaphore flag signaling system (used in ship to ship communication) into a playful, expressive robotic creature that communicates through movement and challenges users to decode its messages. + educational experiences` |
 |             |                                                                     |                                                                                           |
 |             |                                                                     |                                                                                           |
 
@@ -127,7 +128,7 @@ List what inspired the project.
 
 What makes your project original?
 
-**Response:**  
+**Our project is original because it transforms the traditional **semaphore flag signaling** into an interactive memory game, where players must observe, decode, and interpret physical arm movements instead of relying on screens or text.**  
 
 
 ---
