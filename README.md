@@ -160,13 +160,22 @@ Soon, the arms lift again, ready to show a new sequence, and the user watches mo
 
 What is the smallest version of this project that still delivers the core experience?
 
-**Response:**  
+**Response:The smallest version would keep just what’s needed for the **core idea: watch, remember, guess**.
+
+* *1–2 SG90 servos* → to show simple arm positions (even one arm is enough if movements are clear)
+* *Joystick* → to select answers
+* *LCD display* → to show options
+
+No extra sensors, no complex body, just a simple structure to hold the servo(s).
+
+In this version, the creature shows a short sequence of positions, the user remembers it, and then selects the correct word from the screen. You still get the main experience of observing, thinking, and guessing, just with fewer movements and simpler hardware.
+**  
 
 
 ## 5.3 Stretch Features
 
 What features are nice to have but not essential?
-
+ LEDs – add visual feedback, but the display itself already shows correct or wrong
 
 ---
 
@@ -180,23 +189,22 @@ Check all that apply.
 
 - [ ] Mechanical
 
-- [x] Sensor-based
+- [ ] Sensor-based
 
-- [x] App-connected
+- [ ] App-connected
 
 - [x] Motorized
 
 - [ ] Sound-based
 
-- [] Light-based
+- [ ] Light-based
 
-- [] Screen/UI-based
+- [ ] Screen/UI-based
 
 - [x] Fabricated structure
-
 - [x] Game logic based
 
-- [x] Installation
+- [ ] Installation
 
 - [ ] Other:
 
@@ -204,15 +212,9 @@ Check all that apply.
 
 Explain how the system works in simple terms.
 
-Include:
+**The system works in a simple and interactive way. The user gives input using a joystick, which is used to scroll through options on the LCD screen and select an answer. The Shrike Lite microcontroller acts as the brain of the system. It controls the servo motors to move the arms in specific positions to display a sequence, stores the correct answer, reads the user’s input from the joystick, and compares it with the correct response.**
 
-- input,
-- processing,
-- output,
-- physical structure,
-- app interaction if any.
-
-**Response:**  
+**The output is shown through multiple components. The servo motors move the arms to form semaphore positions, the LCD displays the answer choices and basic game information, and the LEDs provide clear feedback by indicating whether the answer is correct or wrong. The physical structure is made using lightweight materials like cardboard or acrylic, with the servos mounted as arms to give it a creature-like form. There is no app involved in this system, as all interaction happens directly through the hardware.**
 
 ## 6.3 Input / Output Map
 
@@ -224,11 +226,11 @@ Include:
 # 7. Sketches and Visual Planning
 
 ## 7.1 Concept Sketch
-
-Add an early sketch of the full idea.
-
 **Insert image below:**  
-`[Upload image and link here]`
+
+ <img width="1600" height="1131" alt="image" src="(https://github.com/ruchitaag06/SKILLLAB__PROR_2026-JORS/blob/main/images/WhatsApp%20Image%202026-04-27%20at%203.35.23%20PM.jpeg)" />
+
+
 
 Example:
 
