@@ -660,23 +660,44 @@ Suggested images:
 
 ## 17.1 Final Description
 
-Describe the final version of your project.
+The final version of the project, JORVIS Semaphore Memory Game, is a fully integrated interactive robotic system built around gesture-based communication and memory gameplay.
+JORVIS uses 4 SG90 servo motors to move its arms into semaphore-inspired positions, which represent encoded words. The system displays a sequence of these gestures, and the user must observe and remember them. After the sequence is shown, the 16×2 LCD display presents multiple-choice answers.
+The user interacts with the system using a joystick, selecting the correct answer based on the observed arm movements. The Shrike Lite (RP2040) microcontroller manages all core logic, including gesture control, input reading, random word selection, and answer verification.
+Feedback is given through:
 
-**Response:**  
+
+Green LED + positive motion for correct answers
+
+
+Red LED + negative motion for incorrect answers
+
+
+The final build is mounted on a lightweight physical structure that supports all components, ensuring stability during movement.
+Overall, the final system is a single-round, memory-based interactive game that combines robotics, embedded systems, and human interaction in a simple but expressive way.
 
 
 ## 17.2 What Works Well
 
-
+The core game concept (semaphore memory game) works well and is engaging, combining observation, memory, and interaction.
+The Shrike Lite (RP2040) integration successfully handles input, logic, and output in a single embedded system.
+Servo-based arm movements effectively create visible and understandable gesture outputs for communication.
+The joystick input system provides a simple and intuitive way for users to interact with the game.
+The LCD display + LED feedback system clearly communicates game states (options, correct/incorrect results).
+The project shows strong end-to-end integration, where hardware, software, and physical structure work together as a complete interactive system.
 
 ## 17.3 What Still Needs Improvement
 
 
 ## 17.4 What Changed From the Original Plan
 
-How did the project change from the initial idea?
+The project evolved significantly from its original concept during the ideation and early development stages.
 
-**Response:**  
+The initial idea focused on general interactive creature behaviors and pattern-based outputs.
+This was later refined into a semaphore flag-based communication system, where arm movements represent encoded letters or words.
+The hardware also changed during development: the planned MG996 servos were replaced with SG90 servos due to better suitability in terms of weight, stability, and power requirements.
+The interaction model was simplified and optimized to focus on a memory-based word guessing game, making the system more structured and playable within the hackathon timeframe.
+
+Overall, the project shifted from a broad concept to a focused, interactive semaphore memory game with optimized hardware and clearer gameplay logic.
 
 
 ---
@@ -706,36 +727,49 @@ Documentation and PPT were efficiently handled alongside development, ensuring n
 
 ## 18.2 Technical Reflection
 
-What did you learn about:
-
-- electronics,
-- coding,
-- mechanisms,
-- fabrication,
-- integration?
-
-**Response:**  
+Electronics: Real-world hardware is sensitive to power and wiring quality. Issues like servo instability, LCD contrast, and power limitations directly affected system performance and required careful handling.
+Coding: Embedded systems coding needs strict control over loops, timing, and input handling. Small mistakes like joystick loop errors or missing libraries can stop the entire system from functioning.
+Mechanisms: Mechanical alignment is critical for accuracy. Even slight servo tilts or improper mounting can affect gesture precision and reduce clarity of output.
+Fabrication: Physical build quality strongly impacts performance. A lightweight and stable structure was necessary to support consistent servo movement and reliable interaction.
+Integration: The most challenging part was combining all modules. Even when individual components worked, system-level integration required multiple rounds of testing and adjustment to achieve smooth interaction between input, processing, and output.
 
 
 ## 18.3 Design Reflection
 
-What did you learn about:
+What We Learned
 
-- designing ,
-- delight,
-- clarity,
-- physical interaction,
-- understanding,
-- iteration?
 
-**Response:**  
+Designing: Good design is about simplifying complex systems into something buildable within real constraints, ensuring hardware, code, and interaction all work together smoothly.
+
+
+Delight: Small expressive behaviors like servo “emotion” movements and LED feedback significantly improve user engagement, even in simple systems.
+
+
+Clarity: Physical outputs must be unambiguous; clear servo positions and well-timed movements are essential for users to correctly interpret semaphore gestures.
+
+
+Physical Interaction: Tangible interfaces like joysticks and moving arms create stronger engagement, but require careful tuning for responsiveness and ease of use.
+
+
+Understanding: Users learn better when information is introduced gradually, starting with simple word lengths and clear visual patterns before increasing difficulty.
+
+
+Iteration: Continuous testing and refinement were critical; most improvements came from fixing real-world issues like servo alignment, input loops, and display timing rather than initial planning.
+
+ 
 
 
 ## 18.4 If You Had One More hour
 
 What would you improve next?
 
-**Response:**  
+Response: If we had one additional hour, the primary focus would be on improving interaction quality and system stability rather than adding new features.
+
+Improve servo accuracy: Recalibrate all SG90 servos and refine angle values to make semaphore gestures more consistent and visually clear.
+Stabilize game flow: Fix minor timing issues between servo movement and LCD updates to make transitions smoother.
+Enhance word system: Expand the word list slightly (or refine existing 3-letter words) to improve gameplay variety without increasing system complexity.
+Improve user experience: Add clearer LCD transitions and slightly slower gesture playback so users can better observe and memorize sequences.
+Final debugging pass: Remove any remaining input or loop inconsistencies in joystick control to ensure fully stable selection during demo. 
 
 ` `
 
