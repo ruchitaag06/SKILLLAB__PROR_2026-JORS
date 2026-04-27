@@ -57,15 +57,16 @@ By the final review, this README should clearly show:
 
 ## 1.1 Studio / Group Name
 
-`Project^2`
+`JORS`
 
 ## 1.2 Team Members
 
 | Name           | Primary Role                    | Secondary Role | Strengths Brought to the Project |
 | -------------- | ------------------------------- | -------------- | -------------------------------- |
-| `Gopalakrishnan` | `[Electronics / Coding / App ]` | `Documentation`  | `Documentation, Gift of Gab `|
-| `KAder Shaikh`  | `[Electronics / Fabrication]`   | `[Coding]`     | `Material Handling, Hardware`    |
-
+| `RUCHITA GAURI` | `[Electronics / Coding / App ]` | `Documentation`  | `Documentation, Gift of Gab `|
+| `SURABHI KARADE PATIL`| `[Electronics / Fabrication]`   | `[Coding]`     | `Material Handling, Hardware`    |
+| `JAY HUMBE`| `[Electronics / Fabrication]`   | `[Coding]`     | `Material Handling, Hardware`    |
+| `OMKAR KHARTUDE`| `[Electronics / Fabrication]`   | `[Coding]`     | `Material Handling, Hardware`    |
 ## 1.3 Project Title
 
 `"Project Project"`
