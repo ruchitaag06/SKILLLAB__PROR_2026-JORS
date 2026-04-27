@@ -219,14 +219,14 @@ Explain how the system works in simple terms.
 
 ## 6.3 Input / Output Map
 
-| | System Part            | Type       | What It Does                                                     |
-| ---------------------- | ---------- | ---------------------------------------------------------------- |
-| Joystick               | Input      | Allows user to scroll through options and select an answer       |
-| Shrike Lite (RP2040)   | Processing | Controls logic, moves servos, reads input, and checks the answer |
-| SG90 Servo Motors (×4) | Output     | Move the arms to display semaphore positions                     |
-| LCD Display            | Output     | Shows answer options and basic game information                  |
-| LEDs (×2)              | Output     | Indicate correct or wrong answer through blinking                |
-| Physical Structure     | Structure  | Holds all components together and gives the creature its form    |
+| System Part            | Type                  | What It Does                                                             |
+| ---------------------- | --------------------- | ------------------------------------------------------------------------ |
+| Joystick               | Input                 | Allows the user to navigate through options and select an answer         |
+| Shrike Lite (RP2040)   | Processing            | Executes game logic, reads input, controls servos, and evaluates answers |
+| SG90 Servo Motors (×4) | Output                | Move the arms to display semaphore-based gestures                        |
+| LCD Display            | Output                | Shows answer options and game messages                                   |
+| LEDs (×2)              | Output                | Provide feedback for correct (green) and wrong (red) answers             |
+| Physical Structure     | Mechanical/Structural | Holds all components together and forms the body of JORVIS               |
 
 
 ---
