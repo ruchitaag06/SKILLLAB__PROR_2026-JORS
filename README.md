@@ -229,8 +229,6 @@ Explain how the system works in simple terms.
 
 ## 7.1 Concept Sketch
 
-<img width="1600" height="1131" alt="image" src="https://github.com/ruchitaag06/SKILLLAB__PROR_2026-JORS/blob/main/images/WhatsApp%20Image%202026-04-27%20at%203.35.23%20PM.jpeg"/>
-
 
 
 ## 7.2 Labeled Build Sketch
@@ -245,7 +243,7 @@ Add a sketch with labels showing:
 
 **Insert image below:**  
 `[Upload image and link here]`
-<img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/95637f31-b4e7-4427-a9e1-4b63fbeb0ac5" />
+<img width="1600" height="1131" alt="image" src="https://github.com/ruchitaag06/SKILLLAB__PROR_2026-JORS/blob/main/images/Jorvis_design.jpeg"/>
 
 ## 7.3 Approximate Dimensions
 
