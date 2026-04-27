@@ -71,6 +71,12 @@ By the final review, this README should clearly show:
 
 `"Meet JORVIS: Semaphore Memory Beast"`
 
+## 🎥 Project Demo
+
+Click the image below to watch the demo:
+
+[![Demo Video](https://img.youtube.com/vi/f1uIiO5Aa-Y/0.jpg)](https://youtu.be/f1uIiO5Aa-Y)
+
 <img width="1600" height="1131" alt="image" src="https://github.com/ruchitaag06/SKILLLAB__PROR_2026-JORS/blob/main/images/GROUP%20NAME.png"/>
 
 ## 1.4 One-Line Pitch
