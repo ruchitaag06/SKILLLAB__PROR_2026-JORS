@@ -591,7 +591,7 @@ The single biggest uncertainty in the project at this stage is the accuracy and 
 
 
 
-## 15.3 | Tester  | What They Did                                                                     | What They Enjoyed                                                           | What You Will Change                                                              |
+## | Tester  | What They Did                                                                     | What They Enjoyed                                                           | What You Will Change                                                              |
 | ------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
 | Ruchita | Tested documentation flow, PPT structure, and overall understanding of the system | Enjoyed structuring and simplifying the project narrative                   | Improve clarity between technical implementation and explanation in documentation |
 | Surabhi | Worked on research, ideation support, and observed gameplay logic and design flow | Enjoyed exploring creative aspects of game design and concept evolution     | Add clearer mapping between gestures and word encoding system                     |
